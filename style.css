@@ -95,6 +95,7 @@ nav{
 }
 
 .space-work{
+    background: beige;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 25px;
@@ -106,3 +107,37 @@ nav{
 }
 
 /* ##################################### */
+
+.section-3{
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.testimonial-dec{
+    display: flex;
+    text-align: center;
+    gap: 5rem;
+}
+
+.testimonial-dec img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+.t-space-work{
+    background: aliceblue;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    padding: 1rem;
+    font-style: italic;
+}
+
+.icon-edit{
+    color: yellow;
+    margin-bottom: 0.5rem;
+}
+
+/* ####################################### */
