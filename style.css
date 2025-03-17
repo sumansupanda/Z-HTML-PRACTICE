@@ -139,3 +139,40 @@ nav{
     color: yellow;
     margin-bottom: 0.5rem;
 }
+
+/* ################################## */
+
+.section-4{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.founder-info{
+    display: flex;
+    text-align: justify;
+    gap: 3rem;
+    background: beige;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.founder-info .separator{
+    border-left: 3px solid red;
+    padding-left: 2rem;
+}
+
+.separator .p1{
+    margin-bottom: 1rem;
+}
+
+.separator .p2{
+    margin-bottom: 2rem;
+}
+
+.founder-info img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 2rem;
+}
