@@ -13,7 +13,7 @@ body{
 /* ################################### */
 
 nav{
-    background: lightgrey;
+    background: beige;
     padding: 10px;
     max-width: 1150px;
     margin: 0 auto;
@@ -128,7 +128,7 @@ nav{
 }
 
 .t-space-work{
-    background: aliceblue;
+    background: beige;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 2rem;
     padding: 1rem;
@@ -175,4 +175,84 @@ nav{
     width: 18rem;
     height: 18rem;
     border-radius: 2rem;
+}
+
+/* ############################### */
+
+.footer-desc{
+    padding-top: 2rem;
+    margin-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background: beige;
+}
+
+.footer-desc .footer-box1{
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.footer-desc .footer-box1 .footer-box1-left{
+    position: relative;
+    border-right: 1px solid black;
+    padding-right: 3rem;
+}
+
+.footer-desc .footer-box1 .footer-box1-left .newsletter{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-desc .footer-box1 .footer-box1-left p{
+    margin-bottom: 1rem;
+}
+
+.footer-desc .footer-box1 .footer-box1-left .pls{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 23rem;
+    margin-top: 5px;
+}
+
+.footer-desc .footer-box1 .footer-box1-left input{
+    border-style: none;
+    border-bottom: 1px solid black;
+    width: 25rem;
+    height: 2rem;
+    background: beige;
+    &:focus{
+        outline: none;
+    }
+}
+
+.footer-desc .footer-box1 .footer-box1-right .footer-box1-right1{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-desc .footer-box1 .footer-box1-right .footer-box1-right2{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-desc .footer-box1 .footer-box1-right .footer-box1-right3{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-box2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.footer-box2 .social{
+    letter-spacing: 5px;
+    cursor: pointer;
 }
