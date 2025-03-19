@@ -36,6 +36,9 @@ nav{
     position: absolute;
     margin-left: 10px;
     margin-top: 7px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .sub-items input{
@@ -56,6 +59,10 @@ nav{
     display: flex;
     gap: 2rem;
     margin-top: 5px;
+}
+
+.sub-items .main-sub li:hover{
+    border-bottom: 1px solid black;
 }
 
 .sub-items ul li:hover{
