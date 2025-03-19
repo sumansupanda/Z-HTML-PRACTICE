@@ -72,3 +72,34 @@ nav{
 .sub-items ul i{
     font-size: 20px;
 }
+
+/* ################################### */
+
+.section001{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.products-show{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.products-show img{
+    width: 180px;
+    height: 130px;
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.products-show p{
+    text-align: center;
+    &:hover{
+        cursor: pointer;
+        color: lightgrey;
+    }
+}
