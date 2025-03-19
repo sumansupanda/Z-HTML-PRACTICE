@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* ####################################### */
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background: beige;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.section01{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-items{
+    position: relative;
+    display: flex;
+    gap: 5rem;
+}
+
+.sub-items .search-icon{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.sub-items input{
+    margin-top: 3px;
+    height: 2rem;
+    width: 15rem;
+    border-style: none;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 15px;
+    &:focus{
+        outline: none;
+    }
+}
+
+.sub-items ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-top: 5px;
+}
+
+.sub-items ul li:hover{
+    cursor: pointer;
+}
+
+.sub-items ul i{
+    font-size: 20px;
+}
