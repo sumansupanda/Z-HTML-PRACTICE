@@ -113,6 +113,38 @@ nav{
     font-size: 20px;
 }
 
+.new-things{
+    display: none;
+    z-index: 1;
+    width: 14rem;
+    position: absolute;
+    margin-left: 61rem;
+    background: black;
+    color: white;
+    opacity: 0.6;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.new-things .new-same-try{
+    margin-left: 1rem;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        color: lightcoral;
+    }
+}
+
+.new-same-try i{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
 /* ################################### */
 
 .section001{
