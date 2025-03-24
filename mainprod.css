@@ -112,6 +112,10 @@ nav{
     font-size: 20px;
 }
 
+.try-user.show{
+    display: block;
+}
+
 .new-things{
     display: none;
     z-index: 1;
@@ -141,6 +145,10 @@ nav{
 .new-same-try i{
     margin-top: 5px;
     font-size: 20px;
+}
+
+.new-things.show{
+    display: block;
 }
 
 /* ################################### */

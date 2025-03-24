@@ -29,12 +29,12 @@
                         <li><i class="fa-solid fa-user-secret" id="userIcon"></i></li>
                     </ul>
                 </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-ellipsis-vertical" id="dots-icon"></i>
             </div>
         </nav>
     </header>
 
-    <div class="try-user">
+    <div class="try-user" id="see-the-game">
         <div class="same-try">
             <i class="fa-solid fa-circle-user"></i>
             <p>My Profile</p>
@@ -52,9 +52,9 @@
             <p>Sign Out</p>
         </div>
     </div>
-    <!-- <script></script> -->
+    <script src="./j1.js"></script>
 
-    <div class="new-things">
+    <div class="new-things" id="lets-do">
         <div class="new-same-try">
             <i class="fa-solid fa-bell"></i>
             <p>Notification Preferences</p>
@@ -64,7 +64,23 @@
             <p>24x7 Customer Care Support</p>
         </div>
     </div>
-    <!-- <script></script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let userIcon = document.getElementById("dots-icon");
+            let popup = document.getElementById("lets-do");
+
+        userIcon.addEventListener("click", function (event) {
+            popup.classList.toggle("show");
+            event.stopPropagation();
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!popup.contains(event.target) && event.target !== userIcon) {
+                popup.classList.remove("show");
+            }
+        });
+    });
+    </script>
 
     <section class="section001">
         <div class="products-show">
