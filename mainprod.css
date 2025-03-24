@@ -165,8 +165,8 @@ nav{
 }
 
 .products-show img{
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
     transition: transform 0.3s ease-in-out;
     &:hover{
         cursor: pointer;
@@ -188,15 +188,39 @@ nav{
     max-width: 800px;
     margin: 0 auto;
     margin-top: 3rem;
-    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
 }
 
 .slide-bar{
     height: 340px;
-    margin: 10px;
+    position: relative;
 }
 
 .slide-bar img{
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 100%;    /* from section002 */
+    height: 100%;   /* from slide-bar */
+    opacity: 0;
+    animation: fade 20s infinite;
+}
+
+.slide-bar img:nth-child(1) { animation-delay: 0s; }
+.slide-bar img:nth-child(2) { animation-delay: 2s; }
+.slide-bar img:nth-child(3) { animation-delay: 4s; }
+.slide-bar img:nth-child(4) { animation-delay: 6s; }
+.slide-bar img:nth-child(5) { animation-delay: 8s; }
+.slide-bar img:nth-child(6) { animation-delay: 10s; }
+.slide-bar img:nth-child(7) { animation-delay: 12s; }
+.slide-bar img:nth-child(8) { animation-delay: 14s; }
+.slide-bar img:nth-child(9) { animation-delay: 16s; }
+.slide-bar img:nth-child(10) { animation-delay: 18s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
 }
