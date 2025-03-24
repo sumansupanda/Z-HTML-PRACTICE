@@ -176,6 +176,7 @@ nav{
 
 .products-show p{
     text-align: center;
+    transition: color 0.4s ease-in-out;
     &:hover{
         cursor: pointer;
         color: lightgrey;
