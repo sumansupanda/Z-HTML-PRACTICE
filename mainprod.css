@@ -239,7 +239,7 @@ nav{
     100% { opacity: 0; }
 } */
 
-.section002 {
+.section002{
     max-width: 800px;
     margin: 0 auto;
     margin-top: 3rem;
@@ -248,20 +248,20 @@ nav{
     border-radius: 10px;
 }
 
-.slider {
+.slider{
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 340px;
 }
 
-.slide-bar {
+.slide-bar{
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.slide-bar img {
+.slide-bar img{
     position: absolute;
     top: 0;
     left: 100%;
@@ -270,11 +270,11 @@ nav{
     transition: left 0.5s ease-in-out;
 }
 
-.slide-bar img.active {
+.slide-bar img.active{
     left: 0;
 }
 
-.indicators {
+.indicators{
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -283,7 +283,7 @@ nav{
     gap: 8px;
 }
 
-.indicators label {
+.indicators label{
     width: 10px;
     height: 10px;
     background: #bbb;
@@ -292,12 +292,48 @@ nav{
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.indicators label:hover {
+.indicators label:hover{
     background: #ff9900;
     transform: scale(1.2);
 }
 
-.indicators label.active {
+.indicators label.active{
     background: #ff6600;
     transform: scale(1.5);
+}
+
+/* ###################################### */
+
+.section003{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.series-prod{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.series-prod .series-box{
+    cursor: pointer;
+    background: beige;
+    border-radius: 10px;
+    padding: 25px;
+    &:hover img{
+        transform: scale(1.1);
+    }
+}
+
+.series-prod img{
+    width: 200px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.series-prod .pd{
+    color: green;
 }
