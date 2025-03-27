@@ -93,6 +93,14 @@ nav{
     padding: 10px;
 }
 
+.same-try a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: lightcoral;
+    }
+}
+
 .try-user .same-try{
     margin-left: 1rem;
     display: flex;
