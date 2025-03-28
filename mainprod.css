@@ -309,7 +309,7 @@ nav{
     margin-left: 75px;
     background: red;
     color: white;
-    margin-top: 25px;
+    margin-top: 4rem;
     width: 10rem;
     padding: 5px;
     border-radius: 5px;
@@ -322,32 +322,66 @@ nav{
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 5rem;
+    position: relative;
 }
 
 .series-prod{
     display: flex;
     gap: 15px;
     text-align: center;
-    overflow-x: scroll;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.series-prod .series-box{
+.series-box{
+    margin-top: 2rem;
     cursor: pointer;
     background: beige;
     border-radius: 10px;
     padding: 25px;
-    &:hover img{
-        transform: scale(1.1);
-    }
+    flex-shrink: 0;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.series-box:hover img{
+    transform: scale(1.1);
 }
 
 .series-prod img{
-    width: 200px;
+    width: 100%;
     height: 150px;
-    transition: transform 0.3s ease-in-out;
     margin-bottom: 10px;
 }
 
 .series-prod .pd{
     color: green;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.left-arrow{
+    left: 67rem;
+    top: 0;
+}
+
+.right-arrow{
+    right: 3rem;
+    top: 0;
+}
+
+.arrow:hover{
+    background-color: #FF6347;
 }

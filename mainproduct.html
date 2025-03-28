@@ -193,6 +193,7 @@
     <p class="trendings">Top Trending</p>
 
     <section class="section003">
+        <button class="arrow left-arrow">&#10094;</button>
         <div class="series-prod">
             <div class="series-box">
                 <img src="./Store_Image/Series IMG/Series IMG 1.png" alt="series">
@@ -237,6 +238,45 @@
                 <p>Top Deals</p>
             </div>
         </div>
+        <button class="arrow right-arrow">&#10095;</button>
     </section>
+    <script>
+        const seriesContainer = document.querySelector('.series-prod');
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        let scrollPosition = 0;
+
+        function scrollSeries(direction) {
+            const cardWidth = 220;
+
+        if (direction === 'right') {
+            scrollPosition += cardWidth;
+        if (scrollPosition > seriesContainer.scrollWidth - seriesContainer.clientWidth) {
+            scrollPosition = seriesContainer.scrollWidth - seriesContainer.clientWidth;
+        }
+        } else if (direction === 'left') {
+        scrollPosition -= cardWidth;
+        if (scrollPosition < 0) {
+            scrollPosition = 0;
+        }
+        }
+
+        seriesContainer.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth',
+        });
+        }
+
+        rightArrow.addEventListener('click', () => scrollSeries('right'));
+        leftArrow.addEventListener('click', () => scrollSeries('left'));
+
+        document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            scrollSeries('right');
+        } else if (e.key === 'ArrowLeft') {
+            scrollSeries('left');
+        }
+        });
+    </script>
 </body>
 </html>
