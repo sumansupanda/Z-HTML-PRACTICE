@@ -304,10 +304,24 @@ nav{
 
 /* ###################################### */
 
+.trendings{
+    position: absolute;
+    margin-left: 75px;
+    background: red;
+    color: white;
+    margin-top: 25px;
+    width: 10rem;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ########################################## */
+
 .section003{
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .series-prod{
